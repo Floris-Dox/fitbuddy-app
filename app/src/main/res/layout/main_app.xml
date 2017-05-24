@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <EditText
+        android:id="@+id/voornaamtxt"
+        android:text="First name"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+    <EditText
+        android:id="@+id/achternaamtxt"
+        android:text="Last name"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/voornaamtxt"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/bpmtxt"
+        android:text="BPM"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/achternaamtxt"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"/>
+
+
+    <Button
+        android:id="@+id/postBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="postData"
+        android:text="POST Dummy Data"
+        android:layout_below="@+id/bpmtxt"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
